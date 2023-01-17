@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Orbitron, sans-serif;
+
+}
+
+body{
+    background: url(../img/fundo_preto.png) center center;
+    background-size: cover; 
+    
+    text-align: center;
+
+    
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+    background-color: black;
+
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: white;
+    border-radius: 10px;
+}
+
+.container{
+    width: 100%;
+    max-width: 90rem;
+    margin: auto;
+    padding: 0 1;
+}
+
+main{
+    min-height: 100vh;
+}
+
+.logo{
+    width:40%;
+}
+
+.cards{
+    width: 100%;
+    padding: 4% 0;
+    display: flex;
+    gap: 15px;
+}
+
+.img{
+    border: 1px solid white;
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    width: 100%;
+}
+
+.cards .img img{
+    transition: all .7s  ease;
+}
+
+.cards .img img:hover{
+    transform: scale(1.1);
+}
+
+.titulo{
+    color: white;
+}
+
+.elenco{
+    color: white;
+}
+
+.anime{
+    position: absolute;
+   
+  
+    
+
+    top: 8%;
+    left: 0%;
+}
+
+.nave{
+    position: absolute;
+    animation: animate 8s linear infinite;
+    
+}
+
+@keyframes animate{
+    0%, 100%{
+        transform: rotate(180deg);
+    }
+
+    50%{
+        transform: translateX(1170%);
+    }
+   
+
+    
+}
+
+.s-info{
+    min-height: 80vh;
+    
+    color: white;
+}
+.s-info .container{
+    background-color: rgba(0, 0, 0, 0.87);
+}
+
+.s-info .top h1{
+    font-size: 4rem;
+    font-weight: 600;
+}
+
+.s-info .top span{
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.s-info .bot .open{
+    margin-top: 7%;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.s-info .bot .director{
+    margin-top: 4%;
+    font-weight: 600;
+}
+
+.s-info .bot .prod{
+    margin-top: 1%;
+    font-weight: 600;
+}
+
+.s-info .bot .date{
+    margin-top: 1%;
+    font-weight: 600;
+}
+
+
+
